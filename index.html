@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vertical Side Navigation Bar</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper_inner">
+			<div class="vertical_wrap">
+			<div class="backdrop"></div>
+			<div class="vertical_bar">
+				<div class="profile_info">
+					<div class="img_holder">
+						<img src="pic.png" alt="profile_pic">
+					</div>
+					<p class="title">ANIA BUKSTEIN</p>
+					<p class="sub_title">aniabukstein@gmail.com</p>
+				</div>
+				<ul class="menu">
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-home"></i></span>
+						<span class="text">Dashboard</span>
+					</a></li>
+					<li><a href="#" class="active">
+						<span class="icon"><i class="fas fa-file-alt"></i></span>
+						<span class="text">Reports</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-chart-pie"></i></span>
+						<span class="text">Statistics</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-user"></i></span>
+						<span class="text">Account</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-cog"></i></span>
+						<span class="text">Settings</span>
+					</a></li>
+				</ul>
+
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_container">
+			<div class="top_bar">
+				<div class="hamburger">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo">
+					Coding <span>Market</span>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi illum ipsum inventore, ratione, repudiandae iste. At rerum dolorum quidem, modi fugiat numquam assumenda fugit recusandae perferendis ullam dolorem pariatur consectetur ex suscipit nulla officiis totam laboriosam vel exercitationem ad. Dolore assumenda vitae repudiandae possimus. Sint expedita, error molestiae perspiciatis magni.</div>
+					<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi illum ipsum inventore, ratione, repudiandae iste. At rerum dolorum quidem, modi fugiat numquam assumenda fugit recusandae perferendis ullam dolorem pariatur consectetur ex suscipit nulla officiis totam laboriosam vel exercitationem ad. Dolore assumenda vitae repudiandae possimus. Sint expedita, error molestiae perspiciatis magni.</div>
+					<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi illum ipsum inventore, ratione, repudiandae iste. At rerum dolorum quidem, modi fugiat numquam assumenda fugit recusandae perferendis ullam dolorem pariatur consectetur ex suscipit nulla officiis totam laboriosam vel exercitationem ad. Dolore assumenda vitae repudiandae possimus. Sint expedita, error molestiae perspiciatis magni.</div>
+					<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi illum ipsum inventore, ratione, repudiandae iste. At rerum dolorum quidem, modi fugiat numquam assumenda fugit recusandae perferendis ullam dolorem pariatur consectetur ex suscipit nulla officiis totam laboriosam vel exercitationem ad. Dolore assumenda vitae repudiandae possimus. Sint expedita, error molestiae perspiciatis magni.</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<script>
+	var hamburger = document.querySelector(".hamburger");
+	var wrapper  = document.querySelector(".wrapper");
+	var backdrop = document.querySelector(".backdrop");
+
+	hamburger.addEventListener("click", function(){
+		wrapper.classList.add("active");
+	})
+
+	backdrop.addEventListener("click", function(){
+		wrapper.classList.remove("active");
+	})
+</script>
+</body>
+</html>
